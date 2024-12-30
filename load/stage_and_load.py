@@ -21,7 +21,7 @@ def initial_load():
         create_laps_table_sql = """
                 CREATE OR REPLACE TABLE laps_staging (
                   circuit_name       STRING,
-                  load_time          TIMESTAMP_NTZ,
+                  year               STRING,
                   session_type       STRING,
                   Time               STRING,
                   Driver             STRING,
@@ -52,13 +52,13 @@ def initial_load():
                   Position           STRING,
                   Deleted            STRING,
                   DeletedReason      STRING,
-                  file_name          STRING
+                  LOAD_TIME          TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
                 );
             """
         create_weather_table_sql = """
             CREATE OR REPLACE TABLE weather_staging (
                 circuit_name       STRING,
-                load_time          TIMESTAMP_NTZ,
+                year               STRING,
                 session_type       STRING, 
                 Time               STRING,
                 AirTemp            STRING,
@@ -68,13 +68,13 @@ def initial_load():
                 TrackTemp          STRING,
                 WindDirection      STRING,
                 WindSpeed          STRING,
-                file_name          STRING
+                LOAD_TIME          TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
             );
         """
         create_drivers_info_table_sql = """
         CREATE OR REPLACE TABLE drivers_info_staging (
             circuit_name       STRING,
-            load_time          TIMESTAMP_NTZ,
+            year               STRING,
             session_type       STRING,
             DriverNumber       STRING,
             BroadcastName      STRING,
@@ -97,7 +97,7 @@ def initial_load():
             Time               STRING,
             Status             STRING,
             Points             STRING,
-            file_name          STRING
+            LOAD_TIME          TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
         );
         """
 
