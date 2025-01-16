@@ -15,11 +15,10 @@ This project automates the ingestion, transformation, and visualization of **For
     - [5. dbt Cloud Transformations](#5-dbt-cloud-transformations)  
     - [6. Fact/Dimension Tables](#6-factdimension-tables)  
     - [7. Visualization with Grafana](#7-visualization-with-grafana)  
-4. [Historical vs Real-Time Data Handling](#historical-vs-real-time-data-handling)  
-5. [AWS Scheduling & Automation Details](#aws-scheduling--automation-details)  
-6. [Data Model Highlights](#data-model-highlights)  
-7. [Setup & Usage](#setup--usage)  
-8. [Potential Extensions](#potential-extensions)  
+4. [AWS Scheduling & Automation Details](#aws-scheduling--automation-details)  
+5. [Data Model Highlights](#data-model-highlights)  
+6. [Setup & Usage](#setup--usage)  
+7. [Potential Extensions](#potential-extensions)  
 
 ---
 
