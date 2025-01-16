@@ -20,7 +20,6 @@ This project automates the ingestion, transformation, and visualization of **For
 6. [Data Model Highlights](#data-model-highlights)  
 7. [Setup & Usage](#setup--usage)  
 8. [Potential Extensions](#potential-extensions)  
-9. [Contact & Credits](#contact--credits)
 
 ---
 
